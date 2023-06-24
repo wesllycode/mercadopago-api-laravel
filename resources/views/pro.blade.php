@@ -7,26 +7,19 @@
     <title>Checkout Pro</title>
 </head>
 <body>
-
-
-    <a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=198208342-8a912c30-95a1-4ceb-b5c9-4a69a8baefa1">
-        <button>
-          Pagar com Mercado Pago
-        </button>
-      </a>
+   
      <div id="wallet_container"></div>
  
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     <script>
-        const mp = new MercadoPago('APP_USR-36dcab6e-b30e-4c4a-86d6-c0839ff78c40');
+        const mp = new MercadoPago('APP_USR-8f904215-ba89-46f3-9d92-77e9d08884ec');
         const bricksBuilder = mp.bricks();
 
 
                   
 mp.bricks().create("wallet", "wallet_container", {
    initialization: {
-       preferenceId: "198208342-f4cbc8ff-5b9a-459b-8723-2a31dd6e4858",     
-       redirectMode: "self"
+       preferenceId: "198208342-92b7774b-105d-45e8-9c99-ce2e1b6befca"
    },
 });
 

@@ -12,7 +12,7 @@
     
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
-      const mp = new MercadoPago('APP_USR-36dcab6e-b30e-4c4a-86d6-c0839ff78c40');
+      const mp = new MercadoPago('APP_USR-8f904215-ba89-46f3-9d92-77e9d08884ec');
       const bricksBuilder = mp.bricks();
 </script>
 <script>
@@ -24,7 +24,7 @@
     com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
      */
      amount: 100,
-     preferenceId: "59787723014",
+     preferenceId: "198208342-92b7774b-105d-45e8-9c99-ce2e1b6befca",
    },
    customization: {
      paymentMethods: {       
@@ -44,7 +44,7 @@
      onSubmit: ({ selectedPaymentMethod, formData }) => {
        // callback chamado ao clicar no botão de submissão dos dados
        return new Promise((resolve, reject) => {
-         fetch("/payment", {
+         fetch("/pro", {
            method: "POST",
            headers: {
              "Content-Type": "application/json",
